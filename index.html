@@ -39,7 +39,9 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Type a word!</h1>
-        <input type='text' onchange="addTheLetters(this);" autofocus="autofocus"/>
+        <form action="javascript:addTheLetters();">
+            <input id='the-word' type='text' autofocus="autofocus"/>
+        </form>
       </div>
     </div>
 
@@ -53,14 +55,20 @@
             </thead>
             <tbody id="number-list">
             </tbody>
-            <tfoot class="hidden">
-                <tr class="success">
+            <tfoot>
+                <tr class="success hidden">
                     <td class="text-right">Total</td>
                     <td id="total"></td>
                 </tr>
+                <tr class="answer hidden">
+                    <td class="text-right">Total</td>
+                    <td><form action="javascript:checkTotal();">
+                        <input type='number' id="the-answer" />
+                    </form>
+                    </td>
+                </tr>
             </tfoot>
         </table>
-        <button type="button" onclick="revealTotal();" class="btn btn-primary hidden">Reveal Total</button>
       <hr>
       <footer>
         <p>&copy; Westley's Dad 2016</p>

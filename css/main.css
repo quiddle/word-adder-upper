@@ -13,7 +13,7 @@
      font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
      font-size: 1.5em;
    }
-   tfoot {
+   tfoot .success {
      font-size: 1.8em;
      font-weight: bold;
    }
