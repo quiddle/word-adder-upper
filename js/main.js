@@ -8,7 +8,7 @@ function addTheLetters(event) {
   $('.success').addClass('hidden');
   $('#number-list').empty();
 
-  var word = $('#the-word').val().toLowerCase();
+  var word = $('#the-word').val();
   for (var i = 0, len = word.length; i < len; i++) {
     var char = word[i];
     var charValue = char.toLowerCase().charCodeAt(0) - 96;
