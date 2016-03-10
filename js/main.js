@@ -1,6 +1,6 @@
 function addTheLetters(input) {
   var total = 0;
-  input.value = input.value.replace(/[^a-zA-Z]/,'');
+  input.value = input.value.replace(/[^a-zA-Z]/g,'');
 
   $('table').removeClass('hidden');
   $('button').removeClass('hidden');
