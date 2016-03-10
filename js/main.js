@@ -30,6 +30,7 @@ function checkTotal(){
   var answer = $('#the-answer').val($('#the-answer').val().replace(/[^0-9]/g,'')).val();
 
   if (answer == '') {
+    $('#the-answer').shake();
     return;
   }
   if (answer == total) {
