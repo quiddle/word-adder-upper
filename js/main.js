@@ -34,6 +34,7 @@ function checkTotal(){
   }
   if (answer == total) {
     revealTotal();
+    $('#the-answer').blur();
   } else {
     $('#the-answer').shake();
   }
