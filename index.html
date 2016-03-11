@@ -46,7 +46,7 @@
     </div>
 
     <div class="container text-center">
-        <table class="table table-striped text-left hidden">
+        <table class="table table-striped text-left hidden col-md-4">
             <thead>
                 <tr>
                     <th class="text-right col-md-2">Letter</th>
@@ -62,10 +62,7 @@
                 </tr>
                 <tr class="answer hidden">
                     <td class="text-right">Total</td>
-                    <td><form action="javascript:checkTotal();">
-                        <input type='number' id="the-answer" />
-                    </form>
-                    </td>
+                    <td><form action="javascript:checkTotal();" style="display: inline"><input type='number' id="the-answer" ></form></td>
                 </tr>
             </tfoot>
         </table>

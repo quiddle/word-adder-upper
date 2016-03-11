@@ -17,6 +17,17 @@
      font-size: 1.8em;
      font-weight: bold;
    }
+   tfoot .answer {
+     font-size: 1.2em;
+     font-weight: bold;
+   }
+   tfoot input {
+     width: 4em;
+   }
+   tbody tr {
+     cursor: grab;
+     cursor: -webkit-grab;
+   }
    /* Everything but the jumbotron gets side spacing for mobile first views */
    .header,
    .marketing,
