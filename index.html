@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Word Adder-Upper</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -45,28 +45,16 @@
       </div>
     </div>
 
+    <div id="results" class="container text-center hidden clearfix">
+      <ul id="number-list"></ul>
+      <div class="success hidden">
+        <span id="total"></span>
+      </div>
+      <div class="answer hidden">
+        <form action="javascript:checkTotal();"><input type="number" id="the-answer" ></form>
+      </div>
+    </div>
     <div class="container text-center">
-        <table class="table table-striped text-left hidden col-md-4">
-            <thead>
-                <tr>
-                    <th class="text-right col-md-2">Letter</th>
-                    <th class="col-md-2">Value</th>
-                </tr>
-            </thead>
-            <tbody id="number-list">
-            </tbody>
-            <tfoot>
-                <tr class="success hidden">
-                    <td class="text-right">Total</td>
-                    <td id="total"></td>
-                </tr>
-                <tr class="answer hidden">
-                    <td class="text-right">Total</td>
-                    <td><form action="javascript:checkTotal();" style="display: inline"><input type='number' id="the-answer" ></form></td>
-                </tr>
-            </tfoot>
-        </table>
-      <hr>
       <footer>
         <p>&copy; Westley's Dad 2016 | <a href="https://github.com/quiddle/word-adder-upper">Github Repo</a></p>
       </footer>
