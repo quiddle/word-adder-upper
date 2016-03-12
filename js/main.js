@@ -1,6 +1,6 @@
 var total=0;
 function addTheLetters(event) {
-  $('#results,.answer,.success').addClass('hidden');
+  $('#results,.answer,#the-answer,#total').addClass('hidden');
 
   $('#number-list').empty();
   $('#the-answer').val('');
@@ -19,7 +19,7 @@ function addTheLetters(event) {
     $('#number-list').append('<li><span>'+char+'</span>'+charValue+'</li>');
   }
 
-  $('#results, .answer').removeClass('hidden');
+  $('#results, .answer,#the-answer').removeClass('hidden');
   $('html, body').animate({
         scrollTop: $("#the-answer").offset().top
     }, 1000);
@@ -36,7 +36,6 @@ function checkTotal(){
     return;
   }
   if (answer == total) {
-    $('#the-answer').blur();
     revealTotal();
   } else {
     $('#the-answer').effect('shake');
@@ -44,7 +43,7 @@ function checkTotal(){
 }
 
 function revealTotal() {
-  $('.answer').addClass('hidden');
-  $('.success').removeClass('hidden');
-  $('.success').effect({ effect: 'highlight', color: '#4CF016', duration: 1000});
+  $('#the-answer').blur().addClass('hidden');
+  $('#total').removeClass('hidden');
+  $('.answer').effect({ effect: 'highlight', color: '#4CF016', duration: 1000});
 }

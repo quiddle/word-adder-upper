@@ -3,66 +3,117 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   /* Space out content a bit */
-   body {
-     padding-top: 20px;
-     padding-bottom: 20px;
-   }
-   .jumbotron {text-align: center;}
-   #number-list {
-     list-style-type: none;
-     margin: 0;
-     padding: 1px 0;
-   }
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.jumbotron {text-align: center;margin-bottom: 10px;}
 
-   #number-list li {
-     vertical-align: top;
-     border: 1px solid black;
-     margin: 3px .75em 3px 0;
-     padding: 1px;
-     background-color: black;
-     color: white;
-     display:inline-block;
-     width: 100px;
-     height: 100px;
-     font-size: 4em;
-     text-align: center;
-     position: relative;
-     cursor: grab;
-     cursor: -webkit-grab;
-     border-radius: 10px;
-   }
-   #number-list li:before {
-     content: '+';
-     color: black;
-     position: absolute;
-     top: 0;
-     left: -.7em;
-   }
-   #number-list li:first-child:before {
-     content: '';
-   }
-   #number-list li span {
-     font-size: .4em;
-     position: absolute;
-     bottom: .2em;
-     right: .4em;
-   }
-   #results div {
-     padding: .2em 0;
-     font-size: 4em;
-     width: 180px;
-     margin: 0 auto;
-     position: relative;
-   }
-   #results > div:before {
-     content: '=';
-     position:absolute;
-     top: 0;
-     left: -1em;
-     color: black;
-   }
-   #results div input {
-     width: 100%;
-     text-align: center;
-   }
+#number-list {
+  list-style-type: none;
+  margin: 0;
+}
+
+@media (min-width: 200px) {
+  #number-list li {
+    vertical-align: top;
+    border: 1px solid black;
+    font-size: 1.3em;
+    margin: 3px .75em 3px 0;
+    padding: 1px;
+    background-color: black;
+    color: white;
+    display:inline-block;
+    width: 35px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    cursor: grab;
+    cursor: -webkit-grab;
+    border-radius: 5px;
+  }
+  #number-list li span {
+    font-size: .5em;
+    position: absolute;
+    bottom: .2em;
+    right: .5em;
+  }
+  #results div {
+    font-size: 1.4em;
+    padding: .5em 0;
+    width: 180px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .jumbotron input {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+@media (min-width: 450px) {
+  #number-list li {
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  #number-list li span {
+    font-size: .4em;
+    bottom: .2em;
+    right: .4em;
+  }
+  #results div {
+    font-size: 2em;
+  }
+  .jumbotron input {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 800px) {
+  #number-list li {
+    font-size: 3em;
+    width: 75px;
+    height: 75px;
+  }
+  #results div {
+    font-size: 3em;
+  }
+  .jumbotron input {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1200px) {
+  #number-list li {
+    font-size: 4em;
+    width: 100px;
+    height: 100px;
+  }
+  #results div {
+    font-size: 4em;
+  }
+  .jumbotron input {
+    font-size: 2.5em;
+  }
+}
+#number-list li:before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 0;
+  left: -.7em;
+}
+#number-list li:first-child:before {
+  content: '';
+}
+#results > div:before {
+  content: '=';
+  position:absolute;
+  top: .5em;
+  left: -1em;
+  color: black;
+}
+#results div input {
+  width: 100%;
+  text-align: center;
+}
