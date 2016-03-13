@@ -12,12 +12,6 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -27,13 +21,6 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="https://github.com/quiddle/word-adder-upper">Word Adder-Upper</a>
-        </div>
-      </div>
-    </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
@@ -53,17 +40,19 @@
         </form>
         <span id="total"></span>
       </div>
-      <button class="btn btn-default" onclick="startOver();">New Word</button>
+      <button class="btn btn-primary" onclick="startOver();">New Word</button>
     </div>
 
     <div class="container text-center">
       <footer>
+        <p>Word Adder-Upper</p>
         <p>&copy; Westley's Dad 2016 | <a href="https://github.com/quiddle/word-adder-upper">Github Repo</a></p>
       </footer>
     </div> <!-- /container -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     </body>
