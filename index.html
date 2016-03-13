@@ -45,11 +45,15 @@
       </div>
     </div>
 
-    <div id="results" class="container text-center hidden">
+    <div id="results" class=" text-center hidden">
       <ul id="number-list"></ul>
-      <div class="answer hidden">
-        <form action="javascript:checkTotal();"><input type="number" id="the-answer" ></form><span id="total"></span>
+      <div class="answer">
+        <form action="javascript:checkTotal();">
+          <input type="number" id="the-answer" >
+        </form>
+        <span id="total"></span>
       </div>
+      <button class="btn btn-default" onclick="startOver();">New Word</button>
     </div>
 
     <div class="container text-center">

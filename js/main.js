@@ -1,7 +1,10 @@
 var total=0;
+function startOver() {
+  $('#results').addClass('hidden');
+  $('.jumbotron').removeClass('hidden');
+  $('#the-word').val('').focus();
+}
 function addTheLetters(event) {
-  $('#results,.answer,#the-answer,#total').addClass('hidden');
-
   $('#number-list').empty();
   $('#the-answer').val('');
 
@@ -18,11 +21,9 @@ function addTheLetters(event) {
     total += charValue;
     $('#number-list').append('<li><span>'+char+'</span>'+charValue+'</li>');
   }
+  $('.jumbotron,#total').addClass('hidden');
+  $('#results,#the-answer').removeClass('hidden');
 
-  $('#results, .answer,#the-answer').removeClass('hidden');
-  $('html, body').animate({
-        scrollTop: $("#the-answer").offset().top
-    }, 1000);
   $('#the-answer').focus();
   $('#total').text(total);
   $('#number-list').sortable().disableSelection();
